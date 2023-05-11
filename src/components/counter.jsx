@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Counter extends Component {
+/*class Counter extends Component {
     state = {
         count: 0,
         tags: []
@@ -26,4 +26,4 @@ class Counter extends Component {
 }
 
 
-export default Counter;
+export default Counter;*/
