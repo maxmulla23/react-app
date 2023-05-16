@@ -1,11 +1,11 @@
 import Header from "./components/Header";
-import Home from "./pages/home";
+import Tasks from "./components/Tasks";
 
 function App() {
   return (
     <div className="container ">
       <Header />
-      
+      <Tasks />
       
     </div>
   );
