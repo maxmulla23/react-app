@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import { Router } from "react-router-dom";
 
 const App = () => {
   const [tasks, setTasks] = useState([
@@ -30,11 +31,13 @@ const App = () => {
     }
 ])
   return (
+    <Router>
     <div className="container ">
       <Header />
       <Tasks tasks={tasks}/>
       
     </div>
+    </Router>
   );
 }
 
