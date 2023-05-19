@@ -23,12 +23,7 @@ const App = () => {
         day: 'Feb 5th at 2:30pm',
         reminder: false,
     },
-    {
-      id: 4,
-      text: 'do Assignment',
-      day: 'Feb 7th at 4:00pm',
-      reminder: true,
-    }
+    
 ])
   return (
     <Router>
