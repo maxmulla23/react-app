@@ -26,13 +26,13 @@ const App = () => {
     
 ])
   return (
-    <Router>
+    
     <div className="container ">
       <Header />
       <Tasks tasks={tasks}/>
       
     </div>
-    </Router>
+  
   );
 }
 
