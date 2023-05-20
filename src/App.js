@@ -29,7 +29,7 @@ const App = () => {
     
     <div className="container ">
       <Header />
-      <Tasks tasks={tasks}/>
+      <Tasks tasks={tasks} />
       
     </div>
   
