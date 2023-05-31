@@ -2,6 +2,7 @@ import { useState } from "react"
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { Router } from "react-router-dom";
+import Task from "./components/Task";
 
 const App = () => {
   const [tasks, setTasks] = useState([
@@ -25,11 +26,17 @@ const App = () => {
     },
     
 ])
+
+//delete task
+const deleteTask = (id) =>{
+  setTasks(tasks.filter((task) => task.id !== id))
+} 
+
   return (
     
     <div className="container ">
       <Header />
-      <Tasks tasks={tasks} />
+      <Tasks tasks={tasks} onDelete= {deleteTask} />
       
     </div>
   
