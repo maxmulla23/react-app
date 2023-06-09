@@ -2,7 +2,7 @@ import { useState } from "react"
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import { Router } from "react-router-dom";
-import Task from "./components/Task";
+import AddTask from "./components/AddTask";
 
 
 const App = () => {
@@ -28,6 +28,11 @@ const App = () => {
     
 ])
 
+//Add task
+ const addTask = (task) =>{
+  console.log(task);
+ }
+
 //delete task
 const deleteTask = (id) =>{
   setTasks(tasks.filter((task) => task.id !== id))
@@ -45,6 +50,7 @@ const toggleReminder = (id) =>{
     
     <div className="container ">
       <Header />
+      <AddTask onAdd={addTask} />
       {tasks.length > 0 ? (
         <Tasks tasks={tasks} onDelete= 
         {deleteTask} onToggle={toggleReminder} /> 
