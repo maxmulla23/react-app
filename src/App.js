@@ -17,10 +17,7 @@ const App = () => {
   }, [])
 
 
-//add task
-const task= () =>{
-  console.log("task")
-}
+
   //fetch tasks
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:6000/tasks')
